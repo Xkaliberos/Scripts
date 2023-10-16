@@ -1,0 +1,14 @@
+* Debian 12 (Bookworm): deb https://developer.download.nvidia.com/compute/cuda/repos/debian12/x86_64/ /
+* Debian 11 (Bullseye): deb https://developer.download.nvidia.com/compute/cuda/repos/debian11/x86_64/ /
+* Debian 10 (Buster): deb https://developer.download.nvidia.com/compute/cuda/repos/debian10/x86_64/ /
+
+deb [trusted=yes] https://developer.download.nvidia.com/compute/cuda/repos/debian<version>/x86_64/ /
+
+sudo apt update
+sudo apt install nvidia-driver
+
+sudo apt install nvidia-dkms
+
+deb https://developer.download.nvidia.com/compute/cuda/repos/debian<version>/x86_64/ cuda /
+
+sudo apt install cuda-toolkit
