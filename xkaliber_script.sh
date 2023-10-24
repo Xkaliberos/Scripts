@@ -29,7 +29,6 @@ sudo apt install waydroid -y
 
 sudo nala update
 
-sudo nala install plasma-mobile
 sudo reboot
 
 sudo systemctl enable --now waydroid-container
