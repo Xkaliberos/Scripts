@@ -13,7 +13,6 @@ sudo apt update && sudo apt install nala || error_exit "Failed to update and ins
 sudo nala upgrade || error_exit "Failed to upgrade 'nala'"
 
 # Install 'plasma-mobile', 'dnsmasq', and 'gdebi' using 'nala'
-sudo nala install plasma-mobile || error_exit "Failed to install 'plasma-mobile' with 'nala'"
 sudo nala install dnsmasq || error_exit "Failed to install 'dnsmasq' with 'nala'"
 sudo nala install gdebi || error_exit "Failed to install 'gdebi' with 'nala'"
 
