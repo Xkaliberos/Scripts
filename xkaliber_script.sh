@@ -72,3 +72,8 @@ sudo apt install armcord
 
 #This Installs Discord
 
+
+sudo apt install gnome
+sudo apt install tasksel
+sudo apt install sddm
+
