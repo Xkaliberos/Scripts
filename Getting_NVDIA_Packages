@@ -12,3 +12,21 @@ sudo apt install nvidia-dkms
 deb https://developer.download.nvidia.com/compute/cuda/repos/debian<version>/x86_64/ cuda /
 
 sudo apt install cuda-toolkit
+
+
+
+
+*******************************************************************************************************************************************************************************
+
+
+
+
+
+sudo apt install software-properties-common -y
+sudo add-apt-repository contrib non-free-firmware
+sudo apt update
+sudo apt install linux-headers-amd64
+sudo apt install nvidia-detect
+nvidia-detect
+sudo apt install nvidia-driver linux-image-amd64
+sudo reboot
