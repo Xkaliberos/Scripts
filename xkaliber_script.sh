@@ -9,14 +9,6 @@ sudo adduser xkaliber sudo
 sudo apt install wget nala dnsmasq konsole
 
 
-sudo wget -qO - https://dl.xanmod.org/archive.key | sudo gpg --dearmor -o /usr/share/keyrings/xanmod-archive-keyring.gpg
-sudo echo 'deb [signed-by=/usr/share/keyrings/xanmod-archive-keyring.gpg] http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.d/xanmod-release.list
-
-
-sudo apt update && sudo apt install linux-xanmod-x64v3
-
-
-
 sudo apt install curl ca-certificates -y
 
 
@@ -28,8 +20,6 @@ curl https://repo.waydro.id | sudo bash
 sudo apt install waydroid -y
 
 sudo nala update
-
-sudo reboot
 
 sudo systemctl enable --now waydroid-container
 #not sure if need the code above could be for arch but what ever
