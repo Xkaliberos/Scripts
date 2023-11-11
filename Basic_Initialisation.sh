@@ -6,12 +6,6 @@ error_exit() {
     exit 1
 }
 
-# Update and install 'nala'
-sudo apt update && sudo apt install nala || error_exit "Failed to update and install 'nala'"
-
-# Upgrade 'nala'
-sudo nala upgrade || error_exit "Failed to upgrade 'nala'"
-
 # Install 'plasma-mobile', 'dnsmasq', and 'gdebi' using 'nala'
 sudo nala install dnsmasq || error_exit "Failed to install 'dnsmasq' with 'nala'"
 sudo nala install gdebi || error_exit "Failed to install 'gdebi' with 'nala'"
