@@ -1,3 +1,4 @@
+   sudo apt-get update --allow-unauthenticated
    sudo apt update
    sudo apt upgrade
    sudo apt update -y
