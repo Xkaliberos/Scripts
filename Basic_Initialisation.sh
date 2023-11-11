@@ -7,8 +7,8 @@ error_exit() {
 }
 
 # Install 'plasma-mobile', 'dnsmasq', and 'gdebi' using 'nala'
-sudo nala install dnsmasq || error_exit "Failed to install 'dnsmasq' with 'nala'"
-sudo nala install gdebi || error_exit "Failed to install 'gdebi' with 'nala'"
+sudo apt install dnsmasq || error_exit "Failed to install 'dnsmasq' with 'nala'"
+sudo apt install gdebi || error_exit "Failed to install 'gdebi' with 'nala'"
 
 # Install 'chromium' and 'flatpak' using 'apt'
 sudo apt install chromium flatpak || error_exit "Failed to install 'chromium' and 'flatpak'"
