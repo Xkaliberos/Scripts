@@ -11,3 +11,5 @@ Scripts Sequence -->
 3.Requirenments.txt (Includes Packages to be installed)
 
 4.Follow the steps in Getting_Nvidia_Packages to get Nvidia kernel and headers. (Under Work , So don't use it for now.)
+
+5.SOS.sh
