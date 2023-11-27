@@ -55,3 +55,19 @@ Scripts Sequence -->
 4.Follow the steps in Getting_Nvidia_Packages to get Nvidia kernel and headers. (Under Work , So don't use it for now.)
 
 5.SOS.sh
+
+6.security.sh ---->
+
+Update the system packages to ensure you have the latest security patches.
+
+Install fail2ban to protect against SSH brute force attacks.
+
+Install a firewall to control network traffic.
+
+Disable root login over SSH to prevent unauthorized access.
+
+Enable strong SSH encryption to protect your data.
+
+Remove unnecessary services to reduce the attack surface.
+
+Configure automatic security updates to ensure your system is always up to date.
