@@ -4,9 +4,10 @@ su
 
 sudo adduser xkaliber sudo
 
+sudo usermod -a -G sudo xkaliber
 #you must reboot after applying the code above for privileges to take effect 
 
-sudo apt install wget nala dnsmasq konsole
+sudo apt install wget nala dnsmasq konsole git
 
 
 sudo apt install curl ca-certificates -y
@@ -55,10 +56,10 @@ sudo ninja install
 
 ok if made it this far great 
 
-sudo curl -fsSL https://eu.armcord.app/pgp-key.public | sudo gpg --dearmor -o /usr/share/keyrings/armcord.gpg
-sudo echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/armcord.gpg] https://eu.armcord.app/apt-repo stable main" | sudo tee /etc/apt/sources.list.d/armcord.list
-sudo apt update
-sudo apt install armcord
+#sudo curl -fsSL https://eu.armcord.app/pgp-key.public | sudo gpg --dearmor -o /usr/share/keyrings/armcord.gpg
+#sudo echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/armcord.gpg] https://eu.armcord.app/apt-repo stable main" | sudo tee /etc/apt/sources.list.d/armcord.list
+#sudo apt update
+#sudo apt install armcord
 
 #This Installs Discord
 
@@ -67,3 +68,7 @@ sudo apt install gnome
 sudo apt install tasksel
 sudo apt install sddm
 
+sudo apt remove kde-plasma-desktop -y
+sudo apt autoclean
+sudo apt install kde-plasma-desktop -y
+sudo apt install plasma-mobile -y
